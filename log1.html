@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+        
+<title>Form Validation</title>
+
+        <script type="text/javascript">
+             function validate()
+      {
+
+         if( document.myForm.uname.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.uname.focus() ;
+            return false;
+         }
+
+
+         if( document.myForm.psw.value == "" ||
+         isNaN( document.myForm.psw.value ) ||
+         document.myForm.psw.value.length != 8 )
+         {
+            alert( "Please provide a Password with 8 charactors" );
+            document.myForm.psw.focus() ;
+            return false;
+         }
+
+         return( true );
+      }
+        </script>
+<link rel="stylesheet" type="text/css" href="login new.css">
+	
+
+<div style="float:left; width:40%;">
+		 <form action="http://signin.php" method="POST" target="_blank" name="myForm" onsubmit="return(validate());" class="login">
+             
+	<h1>LEARNING MANAGEMENT SYSTEM</h1>
+        <table>
+
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text" name="uname" placeholder="User Name" class="login-input"></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="psw" placeholder="Password" class="login-input"></td>
+                </tr>
+              
+                 <tr>
+                        <td></td>
+                        <td><input type="submit" value="Login" class="login-submit"></td>
+                </tr>
+
+                 <tr>
+                        <td></td>
+                        <td><input type="reset" value="Cancle" class="login-submit"></td>
+                </tr>
+
+            </table>
+            </form>
+
+
+</div>
+
+<div style="float:right; width:59%; margin-left:10px;">
+  	<div>
+            <h1>Is this your first time here?</h1>
+        <div>
+        <p> <b><i><ul>
+    	<li>Hi! For full access to courses you'll need to take a minute to create a new account for yourself on NSBM e- learning site.<br/></li>
+    	<li>Each of the individual courses may also have a one-time &quot;enrolment key&quot;, which you won't need until later.<br/> Here are the steps:<br /><br /></li>
+	</ul></i></b>
+        1. Fill out the <a href="http://lms.nsbm.lk/login/signup.php">New Account</a> form with your details.
+        <span style="color: rgb(255, 0, 0);"></span><span style="color: rgb(255, 0, 0);"><br />
+        <span style="color: rgb(0, 0, 0);">2.</span> Index Number should be same as it is your Student ID Card Number.</span><p><span style="color: rgb(255, 0, 0);">
+        <span style="color: rgb(0, 0, 0);"> Eg:- BSC-UCD-MIS-12-1-142</span></span><span style="color: rgb(255, 0, 0);"><br />
+        </span></p><p><span style="color: rgb(255, 0, 0);">
+        <span style="color: rgb(0, 0, 0);">3. </span>Name also should be same as it is your Student ID Card Name.</span></p>
+            <span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">Eg:- Samarasekara H J K M </span></span><br /><br />
+        4. An email will be immediately sent to your email address.<br />
+        5. Read your email, and click on the web link it contains.<br />
+        6. Your account will be confirmed and you will be logged in.<br />
+        7. Now, select the course you want to participate in.<br />
+        8. If you are prompted for an &quot;enrolment key&quot; - use the one that your <br /> teacher has given you. This will &quot;enrol&quot; you in the course.<br />
+        9. You can now access the full course. From now on you will only need to <br /> enter your personal username and password (in the form on this page) to <br />
+        log in and access any course you have enrolled in. </p>
+        <div>  
+        <form action="http://signin.php" method="get" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}" id="signup">
+        <div><input type="submit" value="Create new account" /></div>
+        </form>
+        </div>
+      </div>
+</div>
+
+    <div>Copyright @ National School of Business Management Sri Lanka. <br />
+
+    Telephone: +94(11) 567 2545|5673535 - Email:info@nsbm.lk</font></div>
+        </div>
+    </body>
+</html>
+</body></html>

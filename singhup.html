@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+  
+        <title>Form Validation</title>
+
+        <script type="text/javascript">
+             
+         function validate()
+         {
+
+         if( document.myForm.uname.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.uname.focus() ;
+            return false;
+         }
+
+         if( document.myForm.email.value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+
+         if( document.myForm.psw.value == "" ||
+         isNaN( document.myForm.psw.value ) ||
+         document.myForm.psw.value.length != 8 )
+         {
+            alert( "Please provide a Password with 8 charactors" );
+            document.myForm.psw.focus() ;
+            return false;
+         }
+	 if( document.myForm.cpsw.value == "" ||
+         isNaN( document.myForm.cpsw.value ) ||
+         document.myForm.psw.value.length != 8 )
+         {
+            alert( "Confirm password should match with the password u have entered" );
+            document.myForm.cpsw.focus() ;
+            return false;
+         }
+
+         
+
+         return( true );
+         }
+        </script>
+<link rel="stylesheet" type="text/css" href="login new.css">
+
+
+    
+
+<div>
+
+ <form action="http://signup.php" method="POST" target="_blank" onsubmit="return(validate());" class="login">
+             <h1>LEARNING MANAGEMENT SYSTEM</h1>
+        <table>
+
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text" name="uname" placeholder="User Name" class="login-input"></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" placeholder="Email" class="login-input" ></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="psw" placeholder="Password" class="login-input" ></td>
+                </tr>
+                <tr>
+                    <td>Conform-Password</td> 
+                    <td><input type="password" name="cpsw" placeholder="confirm password"class="login-input" ></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Login" name="signup"></td></tr>
+                        <tr><td></td>
+                        <td><input type="reset" value="Cancle"></td>
+                </tr>
+
+            </table>
+            </form>
+            </div>
+</body></html>

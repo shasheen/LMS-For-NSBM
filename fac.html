@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>(LMS)Learning Management System</title>
+	<link rel="stylesheet" type="text/css" href="facstyle.css">
+	<script type="text/javascript" href="fac.js"></script>
+</head>
+
+
+
+<body>
+	<!-- Header -->
+      <header id="header">
+        <div class="main">
+          <div class="logo"><a href="http://nsbm.lk/"><img class="imglg" src="css/images/logo2.gif"></a></div>
+          <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="#">About US</a>
+            <a href="#">Contact US</a>
+            <!--<a><i class="fa fa-circle" aria-hidden="true"></i>Active</a>-->
+            
+            </nav>          
+        </div>
+      </header>
+ <!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+          
+					<div id="scl"><center><h2>Select Your School</h2></center></div>
+					<br/>
+					<center><table>
+					  <tr>
+						<td><img id="comid" src="com.png" class="school" /></td>
+						<td><img id="bisid" src="bis.png" class="school"/></td>
+						<td><img id="engid" src="eng.png"class="school"/></td>
+					  </tr>
+					</table></center>
+					
+					
+				</div>
+			</section>
+<!-- The Modal (computing)-->
+<div id="myModal" class="modal">
+
+  <!-- computing Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="yearhead">Select Your Acedemic Year: </h2>
+    <ul>
+    	<li class="year"><a class="y" href="dash/dash/dash_cert.html">Foundation/Certification</a></li>
+    	<li class="year"><a class="y" href="dash/dash/dashyr1.html">Year 01</a></li>
+    	<li class="year"><a class="y" href="dash/dash/dash_com_year2.html">Year 02</a></li>
+    	<li class="year"><a class="y" href="">Year 03</a></li>
+    	<li class="year"><a class="y" href="">Year 04</a></li></ul>
+   </div>
+</div>
+
+<!-- The Modal (Business)-->
+<div id="myModal" class="modal">
+
+  <!-- Business Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="yearhead">Select Your Acedemic Year: </h2>
+    <ul>
+    	<li class="year"><a class="y" href="lms\new.html">Foundation/Certification</a></li>
+    	<li class="year"><a class="y" href="">Year 01</a></li>
+    	<li class="year"><a class="y" href="">Year 02</a></li>
+    	<li class="year"><a class="y" href="">Year 03</a></li>
+    	<li class="year"><a class="y" href="">Year 04</a></li></ul>
+   </div>
+</div>
+
+<!-- The Modal (Engineering)-->
+<div id="myModal" class="modal">
+
+  <!-- Engineering Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="yearhead">Select Your Acedemic Year: </h2>
+    <ul>
+    	<li class="year"><a class="y" href="lms\new.html">Foundation/Certification</a></li>
+    	<li class="year"><a class="y" href="">Year 01</a></li>
+    	<li class="year"><a class="y" href="">Year 02</a></li>
+    	<li class="year"><a class="y" href="">Year 03</a></li>
+    	<li class="year"><a class="y" href="">Year 04</a></li></ul>
+   </div>
+</div>
+
+<script type="text/javascript">
+// Get the modal
+     var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+
+    var img1 = document.getElementById("comid");
+    var img2 = document.getElementById("bisid");
+    var img3 = document.getElementById("engid");
+
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the faculty, open the modal 
+    img1.onclick = function() 
+    {
+    modal.style.display = "block";
+    }
+    img2.onclick = function()
+    	{
+    		modal.style.display = "block";
+    	}
+    img3.onclick = function()
+     {
+       modal.style.display = "block";
+     }
+    
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() 
+    {
+    modal.style.display = "none";
+    }
+
+// When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event)
+     {
+    if (event.target == modal) 
+      {
+        modal.style.display = "none";
+      }
+     }
+   </script>
+
+
+
+<!-- Footer -->
+      <footer id="footer">
+        <div class="main">
+          <div class="mode03">
+            <div class="copyright">
+              &copy; Untitled. Design: SLDS
+            </div>
+            <ul class="icons">
+              <a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+              <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+              <a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a>
+              <a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a>
+              <a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
+

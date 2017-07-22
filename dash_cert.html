@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>(LMS)LearningManagementSystem [NSBM]</title>
+		<link rel="stylesheet" type="text/css" href="dashstyle.css">
+		
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+  <body>
+  	<!-- Header -->
+      <header id="header">
+        <div class="main">
+          <div class="logo"><a href="http://nsbm.lk/"><img class="imglg" src="logo2.gif"></a></div>
+          <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="#">About US</a>
+            <a href="#">Contact US</a>
+            <!--<a><i class="fa fa-circle" aria-hidden="true"></i>Active</a>-->
+            
+            </nav>          
+        </div>
+      </header>
+
+
+  
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <center><img src="sticon.png" style="width:1.5cm;height:1.5cm"></center>
+  <div class="dropdown">
+  <button class="dropbtn"><center><a id="prfl" href="#"><span>Shasheen Kawshallya</span><hr></a></center></button>
+  <div class="dropdown-content">
+    <a href="#" id="prfl">Profile</a>
+    <a href="#">SignOut</a>
+    
+  </div>
+</div>  
+  <a href="#">Assignments</a>
+  <a href="#">Forums</a>
+  <a href="#">Quizzes</a>
+  <a href="#">Examinations</a>
+  <a href="#">Grade</a>
+  <a href="#">Resources</a>
+
+</div>
+
+<div id="main">
+ 
+
+  
+  <span style="font-size:30px;cursor:pointer;position:fixed;" onclick="openNav()">&#9776;</span><br><br>
+  
+
+  
+ 
+  <div id="mainbody">
+
+  	<div id="topic"><h2>Courses</h2></div> 
+    <br>
+     <div name="comcert" class="modules" >
+       <ul>
+                   
+                   <li><a id="sub1"  href="#">MA001.2 - Fundamentals of Mathematics (Maths)</a></li><br>
+                   <li><a id="sub2"  href="#">MA002.2 - Introduction to Statistics (Stat)</a></li><br>
+                   <li><a href="#">CS001.2 - Academic Writing (AW)</a></li><br>
+                   <li><a href="#">CS002.2 - Introduction to Computer Applications (ICA)</a></li><br>
+                   <li><a href="#">CS003.2 - Communication and Business Skills (CBS)</a></li><br>
+                   <li><a href="#">CS004.10 - Application Development with C Language (C Proj)
+                   </a></li><br>
+                   
+                   </ul>
+     </div>
+
+
+
+
+
+
+  </div>
+
+
+</div>
+
+<!-- The Modal (computing)-->
+<div id="myModal1" class="modalbody">
+  <span id="close1" class="close">&times;</span>
+  <iframe  src="LecMaterials\FileView1.php" class="modal">
+</iframe>
+</div>
+
+<div id="myModal2" class="modalbody">
+  <span id="close2" class="close">&times;</span>
+  <iframe  src="http://www.dreamincode.net/forums/topic/215340-open-href-into-a-div/" class="modal">
+</iframe>
+</div>
+
+
+
+<!-- Footer -->
+      <footer id="footer">
+        <div class="main">
+          <div class="mode03">
+            <div class="copyright">
+              &copy; Untitled. Design: SLDS
+            </div>
+            <ul class="icons">
+              <a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+              <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+              <a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a>
+              <a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a>
+              <a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    
+}
+
+// Get the modal
+     var modal1 = document.getElementById('myModal1');
+     var modal2 = document.getElementById('myModal2');
+     
+
+// Get the button that opens the modal
+     var link1 = document.getElementById("sub1");
+     var link2 = document.getElementById("sub2");
+   
+
+// Get the <span> element that closes the modal
+     var span1 = document.getElementById("close1");
+     var span2 = document.getElementById("close2");
+    
+
+
+
+// When the user clicks on the module, open the modal 
+    link1.onclick = function() 
+    {
+    modal1.style.display = "block";
+    }
+
+    link2.onclick = function() 
+    {
+    modal2.style.display = "block";
+    }
+
+    
+
+    
+
+// When the user clicks on <span> (x), close the modal
+    span1.onclick = function() 
+    {
+    modal1.style.display = "none";
+    } 
+
+    span2.onclick = function() 
+    {
+    modal2.style.display = "none";
+    } 
+
+
+  
+</script>
+
+
+
+
+     
+</body>
+</html> 

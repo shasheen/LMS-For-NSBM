@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Learning Mangment System</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!-- Header -->
+            <header id="header">
+                <div class="main">
+                    <div class="logo"><a href="http://nsbm.lk/"><img class="imglg" src="css/images/logo2.gif"></a></div>
+                    <nav id="nav">
+                        <a href="index.html">Home</a>
+                        <a href="clubleo.php">Clubs</a>
+                        <a href="aboutus.php">About US</a>
+                        <a href="contactus.php">Contact US</a>
+                        <a href="signout.php"><i class="fa fa-circle" aria-hidden="true"></i>  Log Out</a>
+                        
+                        
+                        </nav>                  
+                </div>
+            </header>
+            <br><br><br><br>
+<form action="fileuploadLec.php" method="POST" enctype="multipart/form-data">
+<table>
+
+               
+                <tr>
+                    <td>Module</td>
+                    <td><input type="text" name="mname" placeholder="Module" ></td>
+                </tr>
+
+                <tr>
+                    <td>Lesson</td>
+                    <td><input type="text" name="les" placeholder="Lesson" ></td>
+                </tr>
+
+                <tr>
+                    <td>Type</td>
+                    <td><input type="text" name="ty" placeholder="Type" ></td>
+                </tr>
+                <tr>
+                    <td>Upload File</td> 
+                    <td><input type="File" name="file1"><br>
+						<input type="submit" name="submit" value="Upload"><input type="reset" value="Cancle"></td>
+						
+                </tr>
+ </table>
+</form>
+
+<!-- Footer -->
+            <footer id="footer">
+                <div class="main">
+                    <div class="mode03">
+                        <div class="copyright">
+                            &copy; Untitled. Design: SLDS
+                        </div>
+                        <ul class="icons">
+                            <a href="#" class="fa fa-facebook"><span class="label">Facebook</span></a>
+                            <a href="#" class="fa fa-twitter"><span class="label">Twitter</span></a>
+                            <a href="#" class="fa fa-linkedin"><span class="label">linkedIn</span></a>
+                            <a href="#" class="fa fa-pinterest-p"><span class="label">Pinterest</span></a>
+                            <a href="#" class="fa fa-vimeo"><span class="label">Vimeo</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>   
+
+</body>
+</html>
